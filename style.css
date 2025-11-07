@@ -634,6 +634,36 @@ max-width: 350px;
 
 
 
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+  }
+
+  nav ul {
+    flex-direction: row; /* يخلي العناصر بجانب بعض */
+    flex-wrap: wrap; /* يسمح لها تنزل سطر ثاني لو الشاشة صغيرة */
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+  }
+
+  .logo-img {
+    width: 45px;
+    height: 45px;
+  }
+}
 
 
 
