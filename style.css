@@ -1,4 +1,53 @@
+/* تنسيق الهيدر والـnav أفقي في الجوال */
+@media (max-width: 768px) {
+  header {
+    flex-direction: row; /* يبقي العناصر بجانب بعض */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
 
+  .logo-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .logo-img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row; /* أفقي */
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  /* تقليل المسافات بين العناصر */
+  .products-section,
+  .about-section,
+  .customer-results,
+  .contact-section {
+    padding: 25px 10px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -630,6 +679,7 @@ max-width: 350px;
     padding: 5px 10px;
   }
 }
+
 
 
 
