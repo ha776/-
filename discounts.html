@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>العروض - ماي ليزا</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="شعار ماي ليزا.jpg" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="شعار ماي ليزا.jpg" alt="شعار ماي ليزا" class="logo-img" />
+        <div class="logo-text">
+          <h2>مــاي ليــــزا <span>My Lissa</span></h2>
+          <p class="branch">
+            <img src="https://www.bing.com/th/id/OIP.fAayIu_s7o2h-7RaBFovSgHaHa?w=195&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Yemen Flag" class="flag" />
+            فرع اليمن
+          </p>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="products.html">المنتجات</a></li>
+          <li><a href="about us.html">من نحن</a></li>
+          <li><a href="cusResult.html">نتائج العملاء</a></li>
+          <li><a href="callus.html">تواصل معنا</a></li>
+          <li><a href="discounts.html" class="active">العروض</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="discount-section">
+      <h1>العروض الخاصة</h1>
+      <p>اختر المنتج وعدد المنتجات لتحصل على السعر بعد الخصم تلقائيًا:</p>
+
+      <div class="discount-container">
+        <label for="product">اختر المنتج:</label>
+        <select id="product">
+          <option value="31,000">كبسول ماي ليزا الشهيرة - 31,000 ريال</option>
+          <option value="15000"> شاي ثمارالورد لخسارة الوزن - 28,000 ريال</option>
+          <option value="10000">منتج 3 - 10,000 ريال</option>
+          <option value="18000">منتج 4 - 18,000 ريال</option>
+          <option value="22000">منتج 5 - 22,000 ريال</option>
+          <option value="9000">منتج 6 - 9,000 ريال</option>
+          <option value="20000">منتج 7 - 20,000 ريال</option>
+          <option value="16000">منتج 8 - 16,000 ريال</option>
+        </select>
+
+        <label for="quantity">عدد المنتجات:</label>
+        <input type="number" id="quantity" min="1" value="1" />
+
+        <p>نسبة الخصم الحالية: <span id="discountRate">0%</span></p>
+        <p>السعر لكل منتج: <span id="pricePerUnit">0</span> ريال</p>
+        <h2>السعر النهائي: <span id="finalPrice">0</span> ريال</h2>
+
+        <p id="discountMessage" style="color: green; font-weight: bold; margin: 10px 0;"></p>
+
+        <a href="#" id="orderLink" class="btn">اطلب الآن عبر واتساب</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 ماي ليزا - فرع اليمن | جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
