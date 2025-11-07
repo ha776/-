@@ -455,3 +455,94 @@ max-width: 350px;
   }
 }
 
+
+/* تحسين المظهر في الجوالات */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .products-grid,
+  .results-grid,
+  .contact-grid {
+    grid-template-columns: 1fr; /* بطاقة واحدة في الصف */
+    padding: 0 10px;
+  }
+
+  .product-card img,
+  .result-card img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .about-section,
+  .contact-section,
+  .products-section,
+  .discount-section {
+    padding: 30px 10px;
+  }
+
+  h1, h2, h3, p {
+    text-align: center;
+  }
+
+  .branch {
+    justify-content: center;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+
+/* تحسين إضافي لشاشات صغيرة جدًا (هواتف أقل من 480px) */
+@media (max-width: 480px) {
+  .logo-img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
